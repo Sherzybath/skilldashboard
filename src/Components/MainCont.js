@@ -1,11 +1,11 @@
 import React from 'react'
 import Nav from "./Nav";
 import Main from "./Main";
-const MainCont = ({tog}) => {
+const MainCont = ({toggle2}) => {
   return (
     <div className='MainCont'>
-        <Nav toggle={tog}/>
-        <Main />
+        <Nav />
+        <Main tog={toggle2}/>
     </div>
   )
 }

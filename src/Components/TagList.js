@@ -5,12 +5,10 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 const TagList = () => {
   return (
     <div className='TagList'>
-      <div className='ManualContainer'>
         <div className='ManualSearch'>
         <FontAwesomeIcon icon={faMagnifyingGlass} className='icons'/>
         <input placeholder='Search'></input>
         </div>
-      </div>
       <span>Jobs</span>
       <div className='line'></div>
 

@@ -192,20 +192,20 @@ input[type="checkbox"]:checked::after {
 .NoticeBoard{
   display: flex;
   flex-direction: row;
+  padding: 1.5vw 4.3vw;
+  justify-content: space-between;
 }
+
 
 .TagList{
   padding: 1.5vw 4.3vw;
   display: flex;
   flex-direction: column;
+  align-items: end;
 
 }
 
-.TagList .ManualContainer{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
+
 .TagList .ManualSearch{
   outline: 2px solid #d0d0d0;
   height: 2.5vw;
@@ -229,7 +229,58 @@ input[type="checkbox"]:checked::after {
   outline: none;
 }
 
+.TagList span{
+  margin-right: 3vw;
+  margin-top: 2vw;
+  font-size: 3vw;
+  border-bottom: #44375f solid 5px;
+}
+
 .TagList .line{
   width: 100%;
   border: 1px solid #d0d0d0;
+}
+
+/* NOTICES */
+/* NOTICES */
+/* NOTICES */
+.notices{
+  width: 75%;
+}
+.post:nth-child(1){
+  border: none;
+}
+.post{
+  padding: 2vw 2vw;
+  max-height: 35vh;
+  
+  background-color: transparent;
+  transition: 0.07s ease-in-out;
+  border-top: 1px solid #1b1b1b;
+}
+.post:hover{
+  background-color: #aac7c6;
+}
+.post h2{
+  font-size: 1.7vw;
+  color: #1b1b1b;
+}
+.post p:nth-child(2){
+  margin-top: 1vw;
+}
+.post p:nth-child(4){
+  margin-top: 1vw;
+}
+.post p,  .post strong{
+  color: #133b3a;
+  font-weight: 500;
+}
+.description {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Number of lines to display */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.5em; /* Adjust based on your font size */
+  max-height: 3em; /* line-height * number of lines */
 }

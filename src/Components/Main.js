@@ -2,12 +2,14 @@ import React from 'react'
 import Home from './Home'
 import TagList from './TagList'
 import List from './List'
-const Main = () => {
+import Footer from './Footer'
+const Main = ({tog}) => {
   return (
     <div className='main'>
-        <Home />
+        <Home toggle={tog}/>
         <TagList />
         <List />
+        <Footer />
     </div>
   )
 }

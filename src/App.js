@@ -10,7 +10,7 @@ function App() {
   };
   return (
     <div className="App">
-      <MainCont tog={toggleComponent}/>
+      <MainCont toggle2={toggleComponent}/>
       {/* <div className="liner">
         <Nav toggle={toggleComponent}/>
         <Main/>

@@ -1,7 +1,7 @@
 import React from 'react';
 import AiImage from '../Assets/wfh.jpeg';
 
-const Home = () => {
+const Home = ({toggle}) => {
   return (
     <div className=' h-[88vh] flex flex-row justify-between items-center bg-[#fff4f0]'>
       {/* Left Sectionffsfsdf */}
@@ -28,7 +28,7 @@ const Home = () => {
         <span className='mt-[1vw] text-[0.8vw] font-medium text-[#555]'>
           Let our AI match you with the perfect freelancer in seconds. Save time and ensure accuracy with our intelligent AI-driven platform.
         </span>
-        <button className='mt-[2vw] bg-[#554ef3] w-[12vw] h-[3vw] text-[#fff] rounded-full shadow-lg hover:bg-[#554ef3] transition-all duration-300'>
+        <button onClick={toggle} className='mt-[2vw] bg-[#554ef3] w-[12vw] h-[3vw] text-[#fff] rounded-full shadow-lg hover:bg-[#554ef3] transition-all duration-300'>
           Use AI to Find Talent
         </button>
       </div>
