@@ -2,6 +2,7 @@ import Nav from "./Components/Nav";
 import Main from "./Components/Main";
 import Chatbot from "./Components/Chatbot";
 import { useState } from "react";
+import MainCont from "./Components/MainCont";
 function App() {
   const [showComponent, setShowComponent] = useState(false);
   const toggleComponent = () => { 
@@ -9,10 +10,11 @@ function App() {
   };
   return (
     <div className="App">
-      <div className="liner">
+      <MainCont tog={toggleComponent}/>
+      {/* <div className="liner">
         <Nav toggle={toggleComponent}/>
         <Main/>
-      </div>
+      </div> */}
       {showComponent && <Chatbot toggle={toggleComponent} />}
       
       
