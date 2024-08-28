@@ -3,7 +3,7 @@ import AiImage from '../Assets/wfh.jpeg';
 
 const Home = () => {
   return (
-    <div className='mt-[10vh] h-[80vh] flex flex-row justify-between items-center bg-[#fff7f0]'>
+    <div className=' h-[80vh] flex flex-row justify-between items-center bg-[#fff4f0]'>
       {/* Left Sectionffsfsdf */}
       <div className='flex flex-col p-[3vw_4.3vw] max-w-[30vw] min-w-[30vw]'>
         <span className='text-[3vw] font-semibold text-[#333]'>Find Your Freelancer</span>
