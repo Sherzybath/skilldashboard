@@ -101,6 +101,35 @@ html, body { margin: 0; height: 100%; }
 /* FILTER */
 /* FILTER */
 /* FILTER */
+/* Basic checkbox styling */
+input[type="checkbox"] {
+  appearance: none;
+  width: 24px; /* Increased width for better visibility */
+  height: 24px; /* Increased height for better visibility */
+  background-color: #133b3a;
+  border: 2px solid #133b3a;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+}
+
+/* When checked, apply styling */
+input[type="checkbox"]:checked {
+  background-color: #133b3a;
+  border-color: #133b3a;
+}
+
+/* Custom checkmark */
+input[type="checkbox"]:checked::after {
+  content: '\2713'; /* Unicode for a checkmark */
+  color: #fff4f0; /* Desired color */
+  font-size: 20px; /* Increase font size for bold appearance */
+  font-weight: bold; /* Make the checkmark bold */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 
 
